@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEB Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    .nav {
+      background-color: beige;
+      padding-top: 2%;
+      padding-left: 3%;
+      border-bottom: 1px solid white;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: rgb(70, 69, 69);
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: rgb(70, 69, 69);
+    }
+
+    .About_me {
+      background-color: beige;
+      height: 500px;
+      background-image: url(img/sapiens.png);
+      background-size: 700px;
+      background-repeat: no-repeat;
+      padding-left: 0%;
+    }
+
+    .navbar-nav a:hover {
+      color: brown;
+      text-decoration: underline;
+    }
+
+    .text {
+      color: rgb(70, 69, 69);
+      padding: 5%;
+      padding-top: 13%;
+      padding-left: 60%;
+    }
+
+    .my_skill{
+        background-size: 700px;
+        padding-top: 10%;
+        height: 800px;
+        background-color: beige;
+    }
+
+    .my_skill .row .card {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.my_skill .row .card:hover {
+  transform: scale(1.1); 
+}
+
+    .my_skill .row{
+        /* padding: 5%; */
+        gap: 5%;
+        margin-right: 1%;
+        justify-content: center;
+    }
+
+    .my_skill .text_skill{
+        /* padding-bottom: 2%; */
+        text-align: center;
+    }
+
+    .row .card img{
+        width: 75%;
+        position: inline;
+        justify-content: center;
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+
+    .experience{
+        /* background-size: 700px; */
+        height: 1000px;
+        background-color: beige;
+        padding-top: 5%;
+        border-bottom: brown;
+    }
+
+    .experience .carousel{
+        width:100%;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .contact_me{
+        height: 500px;
+        background-color: beige;
+        padding-top: 6%;
+        text-align: center;
+        
+    }
+    
+    .contact{
+        transition: transform .2s; /* Animation */
+        margin: 0 auto;
+
+    }
+
+    .contact :hover{
+        transform: scale(1.1);
+    }
+
+    
+  </style>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#About_me">About me</a>
+                <a class="nav-link" href="#my_skill">My Skills</a>
+                <a class="nav-link" href="#experience">Experience</a>
+                <a class="nav-link" href="#contact_me">Contact Me</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="About_me" id="About_me">
+        <!-- <img src="" alt=""> -->
+        <div class="text">
+          <h1>My Portfolio</h1>
+          <br />
+          <p>
+            Hi ! Im Resti Aisyah Qotrunada. <br />Im a software engineering
+            student in LP3I College and now Im in the 4th semester. <br />
+            I am excited to learn more deep in this field !
+          </p>
+        </div>
+      </div>
+      <!-- <br> -->
+      <!-- <hr style="color: brown;"> -->
+
+      <!-- SKILL -->
+      <div class="my_skill" id="my_skill">
+        <div class="text_skill">
+            <h1 style="padding-top: 5%;">My Skills</h1>
+        </div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\php.png" class="card-img-top" />
+                <div class="card-body">
+                    <p class="card-text">
+                   I am now learning for this programming language. I believe that I will be a good PHP developer someday.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img\communication.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <p class="card-text">
+                    I am a good listener and also at public speaking. I like to join a course and class at my campus to improve my skill.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img\time-management.jpg" class="card-img-top" />
+                <div class="card-body">
+                    <p class="card-text">
+                    I am a person who have good at time management. I am able to work in multitasking activity.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div><br><br>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img\language.jpg" class="card-img-top"   />
+                <div class="card-body">
+                    <p class="card-text">
+                        I am able to communicate in 3 language. English, Javanese and Bahasa Indonesia
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="img\365.png" class="card-img-top"  />
+                <div class="card-body">
+                    <p class="card-text">
+                    I am able to use these 3 tools of microsoft. I have learned and have certified from BNSP.
+                    </p>
+                </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card" style="width: 18rem">
+              <img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\uiux.png" class="card-img-top"/>
+                <div class="card-body">
+                    <p class="card-text">
+                    I have basic at graphic design and thats make me learn UI UX to improve my skill at design.
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="experience" id="experience">
+        <div class="text_experience">
+            <h1 style="text-align: center;">My Experience</h1>
+        </div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active"  >
+                <img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\Sertifikat Peserta_LCN 2019_Resti Aisyah Qotrunada.jpg" class="d-block w-100" style="width: 30px;">
+              </div>
+              <div class="carousel-item">
+                <img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\E-Certificate Puisi AIR MATA.JPG" class="d-block w-100" style="width: 30px;">
+              </div>
+              <div class="carousel-item">
+                <img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\Resti Aisyah Qotrunada.png" class="d-block w-100" style="width: 30px;">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+      <div class="contact_me" id="contact_me">
+        <div class="text_experience">
+            <h1>Contact Me</h1>
+            <div class="row" style="padding-top: 5%;" >
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <a href="https://www.linkedin.com/in/resti-aisyah-qotrunada-134342221/"><img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\LinkedIn-Symbole.png" style="width: 30%;"></a>
+                    </div>
+                    <p>LinkedIn</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <a href="https://www.instagram.com/"><img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\ig.png" style="width: 30%;"></a>
+                    </div>
+                    <p></p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contact">
+                        <a href="https://github.com/"><img src="D:\NULIS\bootcamp\Modul 2 HTML\Tugas bootcamp\img\github.png" style="width: 30%;"></a>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="end" style="padding-top: 10%;">
+            <p>Designed by <strong>Resti Aisyah Qotrunada</strong></p>
+          </div>
+
+      </div>
+
+      
+    </div>
+
+    <script>
+        var myCarousel = document.getElementById('myCarousel')
+            myCarousel.addEventListener('slide.bs.carousel', function () {
+            })
+    </script>
+  </body>
+</html>
